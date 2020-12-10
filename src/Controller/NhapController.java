@@ -87,7 +87,7 @@ public class NhapController extends HttpServlet {
 			for (FileItem fileItem : fileItems) {
 				if (!fileItem.isFormField()) {// Nếu ko phải các control=>upfile lên
 					// xử lý file
-				
+				//lấy tên file 
 					String nameimg = fileItem.getName();
 					Path path =Paths.get(nameimg);
 					if (!nameimg.equals("")) {
@@ -111,7 +111,7 @@ public class NhapController extends HttpServlet {
 						}
 					}
 				} else{// Neu la control
-				
+					// test tí vui thôi
 					fields.put(fileItem.getFieldName(),fileItem.getString("UTF-8"));// lấy dữ liệu từ client gửi về định dạng UTF-8
 						
 				}
