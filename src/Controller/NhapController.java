@@ -111,7 +111,7 @@ public class NhapController extends HttpServlet {
 						}
 					}
 				} else{// Neu la control
-					// test tí vui thôi
+					// test tí vui thôi! kheo mat code
 					fields.put(fileItem.getFieldName(),fileItem.getString("UTF-8"));// lấy dữ liệu từ client gửi về định dạng UTF-8
 						
 				}
